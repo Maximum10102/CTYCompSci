@@ -80,10 +80,29 @@
             color:azure;
         }
 
-        li a:hover {
+        .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            color: azure;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+  
+            /* Position the tooltip */
+            top: -5px;
+            right: 105%;
+        }
+
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+
+        li a:hover  {
             background-color: rgb(75, 132, 165);
             color: azure;
             text-decoration: none;
+            
+            visibility: visible;
         }
 
         div#ProjectLinks {
@@ -152,10 +171,10 @@
                     <div id="linkhead">
                         <li>Project Links:</li>
                     </div>
-                    <div><li class="links"><a href="../CTY19_MaxB/Tic-Tac-Toe.htm" target="_blank">Tic-Tac-Toe</a></li></div>
-                    <div><li class="links"><a href="../CTY19_MaxB/pong.htm" target="_blank">Pong</a></li></div>
-                    <div><li class="links"><a href="../CTY19_MaxB/BrickBreaker.htm" target="_blank">Brick Breaker</a></li></div>
-                    <div><li class="links"><a href="../CTY19_MaxB/FinalProject/Survival.htm" target="_blank">Survival</a></li></div>
+                    <div><li class="links tooltip"><a href="../CTY19_MaxB/Tic-Tac-Toe.htm" target="_blank">Tic-Tac-Toe<span class="tooltiptext">: Classic Tic-Tac-Toe</span></a></li></div>
+                    <div><li class="links tooltip"><a href="../CTY19_MaxB/pong.htm" target="_blank">Pong<span class="tooltiptext">: The original video game</span></a></li></div>
+                    <div><li class="links tooltip"><a href="../CTY19_MaxB/BrickBreaker.htm" target="_blank">Brick Breaker<span class="tooltiptext">: Like pong on it's side</span></a></li></div>
+                    <div><li class="links tooltip"><a href="../CTY19_MaxB/FinalProject/Survival.htm" target="_blank">Survival<span class="tooltiptext">: A zombie shooter game</span></a></li></div>
                 </ul>
             </div>
             <div id="FavLinks">
